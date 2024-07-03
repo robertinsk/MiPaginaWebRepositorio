@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>CalculadoraDeBenjamin</title>
+    <link type= "text/css" rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+            <div class="barraDeMenu">
+                <li> <a href="misActualesTrabajos.html">Volver</a> </li>
+            </div>
+            <div id="calculadoraGeneral">
+                <form name="calculadora">
+                    <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+
+                    <input type="button" value="7" onclick="document.calculadora.ans.value+='7'" class="morado">
+                    <input type="button" value="8" onclick="document.calculadora.ans.value+='8'" class="morado">
+                    <input type="button" value="9" onclick="document.calculadora.ans.value+='9'" class="morado">
+                    <input type="button" value="+" onclick="document.calculadora.ans.value+='+'" class="gris">
+                    <br>
+                    <input type="button" value="4" onclick="document.calculadora.ans.value+='4'" class="morado">
+                    <input type="button" value="5" onclick="document.calculadora.ans.value+='5'" class="morado">
+                    <input type="button" value="6" onclick="document.calculadora.ans.value+='6'" class="morado">
+                    <input type="button" value="-" onclick="document.calculadora.ans.value+='-'" class="gris">
+                    <br>
+                    <input type="button" value="1" onclick="document.calculadora.ans.value+='1'" class="morado">
+                    <input type="button" value="2" onclick="document.calculadora.ans.value+='2'" class="morado">
+                    <input type="button" value="3" onclick="document.calculadora.ans.value+='3'" class="morado">
+                    <input type="button" value="X" onclick="document.calculadora.ans.value+='*'" class="gris">
+                    <br>
+                    <input type="reset" value="C">
+                    <input type="button" value="0" onclick="document.calculadora.ans.value+='0'" class="morado">
+                    <input type="button" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+                    <input type="button" value="/" onclick="document.calculadora.ans.value+='/'" class="gris">
+                </form>
+            </div>
+    </body>
+</html>
